@@ -1,0 +1,26 @@
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.card {
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+.error{
+  color: red;
+}
+
+.successsnackbar {
+  background-color:#ffffff; /* Verde */
+  color:  #4CAF50;
+}
+
+.errorsnackbar {
+  background-color: #ffffff; /* Vermelho */
+  color: #F44336;
+}

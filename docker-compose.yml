@@ -1,0 +1,23 @@
+
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+      POSTGRES_DB: my_database
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+# Definindo a rede compartilhada entre os containers
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
